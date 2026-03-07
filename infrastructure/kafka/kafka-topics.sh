@@ -1,0 +1,1 @@
+echo create kafka topics
