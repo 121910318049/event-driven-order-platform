@@ -10,11 +10,14 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String orderId;
 
     private Double amount;
 
     private String status;
+
+    private String notifyStatus;
 
     public Long getId() {
         return id;
@@ -42,5 +45,13 @@ public class Order {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getNotifyStatus() {
+        return notifyStatus;
+    }
+
+    public void setNotifyStatus(String notifyStatus) {
+        this.notifyStatus = notifyStatus;
     }
 }

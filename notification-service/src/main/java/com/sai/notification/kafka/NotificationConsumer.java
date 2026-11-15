@@ -5,6 +5,9 @@ import org.springframework.stereotype.Service;
 
 import com.sai.notification.service.NotificationService;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 @Service
 public class NotificationConsumer {
 
